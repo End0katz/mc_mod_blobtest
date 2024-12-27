@@ -28,7 +28,7 @@ public class Blobtest implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public static void completed(String x){
-		LOGGER.info("\t # %s".formatted(x));
+		LOGGER.info("     # %s".formatted(x));
 	}
 
 	@Override
@@ -37,12 +37,18 @@ public class Blobtest implements ModInitializer {
 		LOGGER.info("------- Blobtest Initializing progress: -------");
 
 		initstate = InitState.LOGGER;
-		LOGGER.info("\t # Logger");
+		completed("Logger");
 
 		initstate = InitState.ITEMS;
+		Items.initialize();
 
+		initstate = InitState.BLOCKS;
+		Blocks.initialize();
 
+		initstate = InitState.ENTITIES;
+		Entities.initialize();
 
+		initstate = InitState.COMPLETED;
 		LOGGER.info("------- Blobtest Initializing completed -------");
 	}
 }
