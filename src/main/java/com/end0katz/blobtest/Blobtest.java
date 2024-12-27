@@ -2,6 +2,8 @@ package com.end0katz.blobtest;
 
 import net.fabricmc.api.ModInitializer;
 
+import com.end0katz.blobtest.item.ModItems;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,6 +24,7 @@ public class Blobtest implements ModInitializer {
 		// Proceed with mild caution.
 		LoadedThings.putIfAbsent("Items:start", false);
 		LoadedThings.putIfAbsent("Items:finish", false);
+        ModItems.register();
 
 		try{Thread.sleep(10000L);} catch (InterruptedException e) {
 			LOGGER.info("InterruptedExecution whilst sleeping: %s".formatted(e.getMessage()));
