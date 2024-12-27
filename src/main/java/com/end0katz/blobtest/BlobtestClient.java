@@ -1,4 +1,10 @@
 package com.end0katz.blobtest;
 
-public class BlobtestClient implements ClientModInitializer{
+import net.fabricmc.api.ClientModInitializer;
+
+public class BlobtestClient implements ClientModInitializer {
+    @Override
+    public void onInitializeClient() {
+
+    }
 }
