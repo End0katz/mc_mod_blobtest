@@ -10,7 +10,17 @@ public class Blobtest implements ModInitializer {
 	public static final String MOD_ID = "blobtest";
 
 	public enum InitState {
-		PRE, LOGGER, ITEMS, BLOCKS, ENTITIES, COMPLETED;
+		PRE(0), LOGGER(1), ITEMS(2), BLOCKS(3), ENTITIES(4), COMPLETED(5);
+
+		private int x;
+
+		private InitState(int x){
+			this.x = x;
+		}
+
+		public boolean can_do(InitState other){
+			return this.x >= other.x;
+		}
 	}
 
 	public static InitState initstate = InitState.PRE;
