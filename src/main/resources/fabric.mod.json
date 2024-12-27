@@ -3,13 +3,13 @@
 	"id": "blobtest",
 	"version": "${version}",
 	"name": "Blobtest",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Test to see if I can actually code a mod XD",
 	"authors": [
-		"Me!"
+		"End0katz"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/End0katz/mc_mod_blobtest"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/blobtest/icon.png",
@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"com.end0katz.blobtest.BlobtestDataGenerator"
+		],
+		"client": [
+			"com.end0katz.blobtest.BlobtestClient"
 		]
 	},
 	"mixins": [
