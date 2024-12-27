@@ -19,6 +19,8 @@ public class Blobtest implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("------- Blobtest Initializing progress: -------");
+		LOGGER.info(" # Logger");
+		LOGGER.info("------- Blobtest Initializing completed -------");
 	}
 }
