@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "blobtest",
+	"version": "${version}",
+	"name": "Blobtest",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/blobtest/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.end0katz.blobtest.Blobtest"
+		],
+		"fabric-datagen": [
+			"com.end0katz.blobtest.BlobtestDataGenerator"
+		]
+	},
+	"mixins": [
+		"blobtest.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
