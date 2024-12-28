@@ -9,7 +9,7 @@ public class Blobtest implements ModInitializer {
 	public static final String MOD_ID = "blobtest";
 
 	public enum InitState {
-		PRE, LOGGER, ITEMS, BLOCKS, ENTITIES, COMPLETED;
+		PRE, LOGGER, ITEMS, BLOCKS, ENTITIES, COMPLETED
 
 		//// private final int x;
 		//// InitState(int x){
@@ -41,9 +41,7 @@ public class Blobtest implements ModInitializer {
 		completed("Logger");
 
 		initstate = InitState.ITEMS;
-		completed("Set-ITEMS");
-		Items.initialize();
-		completed("Done-ITEMS");
+		ModItems.initialize();
 
 		initstate = InitState.BLOCKS;
 		Blocks.initialize();
